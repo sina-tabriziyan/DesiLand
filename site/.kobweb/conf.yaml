@@ -1,0 +1,14 @@
+site:
+  title: "DesiLand"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/desiland.js"
+      api: "build/libs/desiland.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/desiland.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
